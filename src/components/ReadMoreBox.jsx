@@ -23,7 +23,7 @@ export function ReadMoreBox() {
               duration: 1,
               type: 'fade',
             }}
-            className="mt-2 font-display text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+            className="mt-2 font-display text-lg font-bold tracking-tight text-gray-900 sm:text-xl"
           >
             {aboutTitle}
           </motion.h1>
