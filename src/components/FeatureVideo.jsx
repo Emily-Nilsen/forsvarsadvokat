@@ -21,7 +21,7 @@ export function FeatureVideo() {
   const videoCaption = t('video-caption')
 
   return (
-    <div className="relative bg-slate-50/50 py-0 sm:py-16">
+    <div className="relative bg-gray-800 py-0 sm:py-16">
       <VideoHeading />
 
       <div className="relative overflow-hidden">
@@ -53,7 +53,7 @@ export function FeatureVideo() {
               </div>
             </div>
           </div>
-          <figcaption className="mt-4 flex w-full gap-x-2 px-4 text-sm leading-6 text-gray-500 sm:px-0">
+          <figcaption className="mt-4 flex w-full gap-x-2 px-4 text-sm leading-6 text-gray-300 sm:px-0">
             <InformationCircleIcon
               className="mt-0.5 h-5 w-5 flex-none text-gray-300"
               aria-hidden="true"

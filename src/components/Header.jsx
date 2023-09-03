@@ -8,6 +8,7 @@ import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import useTranslation from 'next-translate/useTranslation'
+import { useState } from 'react' // Import useState
 
 function MenuIcon(props) {
   return (
@@ -54,6 +55,11 @@ function classNames(...classes) {
 export function Header(props) {
   const { t, lang } = useTranslation('common')
   const kontakt = t('kontakt')
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false) // State for mobile menu
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false) // Function to close the mobile menu
+  }
 
   return (
     <header className="absolute w-full lg:relative lg:px-20">
@@ -65,8 +71,8 @@ export function Header(props) {
               href="/"
               aria-label="Home"
             >
-              <Logo className="h-4 w-4 fill-gray-900 sm:h-5 sm:w-5" />
-              <h3 className="font-serif text-xs font-bold uppercase sm:text-base">
+              <Logo className="h-4 w-4 fill-white sm:h-5 sm:w-5 sm:fill-gray-900" />
+              <h3 className="font-serif text-xs font-bold uppercase text-white sm:text-base sm:text-gray-950">
                 Forsvarsadvokat
               </h3>
             </Link>
@@ -79,7 +85,7 @@ export function Header(props) {
               {({ open }) => (
                 <>
                   <Popover.Button
-                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-400 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 [&:not(:focus-visible)]:focus:outline-none"
+                    className="relative z-10 -m-2 inline-flex items-center rounded-lg stroke-gray-100 p-2 hover:bg-gray-200/50 hover:stroke-gray-600 active:stroke-gray-900 sm:stroke-gray-400 [&:not(:focus-visible)]:focus:outline-none"
                     aria-label="Toggle site navigation"
                   >
                     {({ open }) =>
@@ -117,7 +123,11 @@ export function Header(props) {
                             <MobileNavLink href="#kontakt">
                               {kontakt}
                             </MobileNavLink>
-                            <LanguageSwitcher />
+                            {/* Pass the closeMobileMenu function as a prop */}
+                            <LanguageSwitcher
+                              closeMobileMenu={closeMobileMenu}
+                              isMobileMenuOpen={isMobileMenuOpen}
+                            />
                           </div>
                         </Popover.Panel>
                       </>
@@ -127,7 +137,8 @@ export function Header(props) {
               )}
             </Popover>
             <div className="hidden lg:block">
-              <LanguageSwitcher />
+              {/* Pass the closeMobileMenu function as a prop */}
+              <LanguageSwitcher closeMobileMenu={closeMobileMenu} />
             </div>
           </div>
         </div>
