@@ -23,7 +23,7 @@ export function FeatureVideo() {
   return (
     <div>
       <div className="relative bg-gray-800 py-0 sm:py-16">
-        <VideoHeading />
+        {/* <VideoHeading /> */}
 
         <div className="relative overflow-hidden">
           <div className="mx-auto mb-16 rounded-none sm:my-16 sm:max-w-sm sm:rounded-2xl md:my-24 md:max-w-2xl lg:max-w-7xl lg:px-8">
