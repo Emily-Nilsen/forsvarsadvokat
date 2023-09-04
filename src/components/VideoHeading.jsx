@@ -11,7 +11,9 @@ export function VideoHeading() {
           {/* <h2 className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Media
           </h2> */}
-          <p className="mt-2 text-lg leading-8 text-gray-300">{mediaText}</p>
+          <p className="mt-2 text-lg font-bold leading-8 text-gray-300">
+            {mediaText}
+          </p>
         </div>
       </div>
     </div>

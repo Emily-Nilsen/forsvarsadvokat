@@ -16,9 +16,9 @@ export function Contact() {
       id="kontakt"
       className="mb-4 w-full border-t sm:mb-6 sm:w-fit sm:border-none"
     >
-      <h2 className="mt-6 font-display text-3xl font-bold tracking-tight text-gray-900 sm:mt-0">
+      {/* <h2 className="mt-6 text-3xl font-bold tracking-tight text-gray-900 font-display sm:mt-0">
         {kontakt}
-      </h2>
+      </h2> */}
       <div className="mt-6 sm:mt-10 ">
         <dl className="flex flex-col items-start space-y-6 text-base leading-7 text-gray-600 sm:flex-row sm:space-x-8 sm:space-y-0">
           <div className="flex gap-x-4">

@@ -25,7 +25,7 @@ export function Footer() {
                 </p>
               </div>
             </div>
-            <p className="mt-1 text-sm">{slogan}</p>
+            {/* <p className="mt-1 text-sm">{slogan}</p> */}
           </div>
 
           <Contact />
