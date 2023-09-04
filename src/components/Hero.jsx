@@ -13,9 +13,10 @@ function MobileHero() {
   return (
     <div className="relative h-[50vh] sm:hidden">
       <Image
-        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Forsvarsadvokat/Forsvarsadvokat_desktop_nfm3vs.webp"
+        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Forsvarsadvokat/mobile_hero_fw0ow7.webp"
         alt="Christian Flemmen Johansen"
-        fill
+        width={2000}
+        height={1217}
         className="h-full w-full object-cover object-center"
         priority
       />
