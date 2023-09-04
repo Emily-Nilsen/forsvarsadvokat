@@ -57,12 +57,6 @@ export function Fields() {
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                   <div className="lg:ml-auto lg:pl-4 lg:pt-4">
                     <div className="lg:max-w-lg">
-                      {/* <h2 className="text-base leading-7 text-gray-600 uppercase">
-                        {advokat}
-                      </h2>
-                      <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 font-display sm:text-6xl">
-                        Christian Flemmen Johansen
-                      </h1> */}
                       <motion.p
                         whileInView={{ opacity: 1 }}
                         initial={{ opacity: 0 }}
@@ -137,15 +131,7 @@ export function Fields() {
                         width={1280}
                         height={1280}
                       />
-                      <div className="flex justify-end">
-                        {/* <figcaption className="flex mt-4 text-sm leading-6 text-right text-gray-500 gap-x-2">
-                          <InformationCircleIcon
-                            className="mt-0.5 h-5 w-5 flex-none text-gray-300"
-                            aria-hidden="true"
-                          />
-                          Advokat Christian Flemmen Johansen
-                        </figcaption> */}
-                      </div>
+                      <div className="flex justify-end"></div>
                     </div>
                     <div className="relative hidden sm:block ">
                       <Image
@@ -155,15 +141,7 @@ export function Fields() {
                         width={1280}
                         height={1280}
                       />
-                      <div className="flex justify-end">
-                        {/* <figcaption className="flex mt-4 text-sm leading-6 text-right text-gray-500 gap-x-2">
-                          <InformationCircleIcon
-                            className="mt-0.5 h-5 w-5 flex-none text-gray-300"
-                            aria-hidden="true"
-                          />
-                          Advokat Christian Flemmen Johansen
-                        </figcaption> */}
-                      </div>
+                      <div className="flex justify-end"></div>
                     </div>
                   </div>
                 </div>

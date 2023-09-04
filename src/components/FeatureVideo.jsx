@@ -22,7 +22,7 @@ export function FeatureVideo() {
 
   return (
     <div>
-      <div className="relative bg-gray-800 py-0 sm:py-16">
+      <div className="relative bg-gray-800 py-16">
         {/* <VideoHeading /> */}
 
         <div className="relative overflow-hidden">
