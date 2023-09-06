@@ -57,18 +57,9 @@ export function Fields() {
                 <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                   <div className="lg:ml-auto lg:pl-4 lg:pt-4">
                     <div className="lg:max-w-lg">
-                      <motion.p
-                        whileInView={{ opacity: 1 }}
-                        initial={{ opacity: 0 }}
-                        transition={{
-                          delay: 0.5,
-                          duration: 1,
-                          type: 'fade',
-                        }}
-                        className="mt-6 text-lg leading-8 text-gray-600"
-                      >
+                      <p className="mt-6 text-lg leading-8 text-gray-600">
                         {about1}
-                      </motion.p>
+                      </p>
                       <dl className="mt-4 max-w-xl space-y-4 text-base leading-7 text-gray-600 lg:max-w-none">
                         <motion.div
                           whileInView={{ opacity: 1 }}
