@@ -19,6 +19,7 @@ function MobileHero() {
         height={1217}
         className="h-full w-full object-cover object-center"
         priority
+        unoptimized
       />
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900/70" />
       <div className="absolute inset-0 mt-[6.5rem] flex max-w-xs flex-col pl-6 pr-24">
@@ -92,6 +93,7 @@ export function Hero() {
             width={4500}
             height={2739}
             priority
+            unoptimized
           />
           <div className="absolute inset-0 bg-gradient-to-r from-gray-900/50" />
         </div>
