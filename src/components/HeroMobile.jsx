@@ -41,7 +41,7 @@ export function HeroMobile() {
               whileInView={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{
-                delay: 0.3,
+                delay: 0.1,
                 duration: 1,
                 type: 'fade',
               }}
@@ -55,7 +55,7 @@ export function HeroMobile() {
               whileInView={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{
-                delay: 0.5,
+                delay: 0.2,
                 duration: 1,
                 type: 'fade',
               }}
@@ -68,7 +68,7 @@ export function HeroMobile() {
               whileInView={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{
-                delay: 0.7,
+                delay: 0.3,
                 duration: 1,
                 type: 'fade',
               }}
@@ -82,7 +82,7 @@ export function HeroMobile() {
               whileInView={{ opacity: 1 }}
               initial={{ opacity: 0 }}
               transition={{
-                delay: 0.9,
+                delay: 0.4,
                 duration: 1,
                 type: 'fade',
               }}

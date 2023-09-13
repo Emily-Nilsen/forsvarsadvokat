@@ -61,7 +61,7 @@ export function Fields() {
                         whileInView={{ opacity: 1 }}
                         initial={{ opacity: 0 }}
                         transition={{
-                          delay: 0.5,
+                          delay: 0.45,
                           duration: 1,
                           type: 'fade',
                         }}
