@@ -11,19 +11,6 @@ export function HeroMobile() {
         {/* Desktop */}
         <div className="hidden sm:block">
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Forsvarsadvokat/mobile_hero_fw0ow7.webp"
-            alt="Christian Flemmen Johansen"
-            width={2000}
-            height={1217}
-            priority
-            unoptimized
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
-          />
-          <div className="absolute inset-0 z-0 bg-gradient-to-r from-gray-900/70" />
-        </div>
-        {/* Mobile */}
-        <div className="sm:hidden">
-          <Image
             src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Forsvarsadvokat/Forsvarsadvokat_desktop_nfm3vs.webp"
             alt="Christian Flemmen Johansen"
             width={4500}
@@ -33,6 +20,19 @@ export function HeroMobile() {
             className="absolute inset-0 -z-10 h-full w-full object-cover"
           />
           <div className="absolute inset-0 z-0 bg-gradient-to-r from-gray-900/50" />
+        </div>
+        {/* Mobile */}
+        <div className="sm:hidden">
+          <Image
+            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Forsvarsadvokat/mobile_hero_fw0ow7.webp"
+            alt="Christian Flemmen Johansen"
+            width={2000}
+            height={1217}
+            priority
+            unoptimized
+            className="absolute inset-0 -z-10 h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 z-0 bg-gradient-to-r from-gray-900/70" />
         </div>
 
         <div className="relative z-10 -mt-12 max-w-2xl px-6 py-32 sm:-mt-28 sm:px-16 sm:py-48 lg:py-56">
