@@ -62,7 +62,7 @@ export function Header(props) {
   }
 
   return (
-    <header className="absolute w-full lg:relative lg:px-20">
+    <header className="absolute mx-auto w-full max-w-screen-2xl lg:relative lg:px-20">
       <nav>
         <div className="relative z-50 flex justify-between px-6 py-8 lg:px-0">
           <div className="relative z-10 flex items-center gap-16">
