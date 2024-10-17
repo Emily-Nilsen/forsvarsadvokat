@@ -47,9 +47,9 @@ export function Contact() {
               />
             </dt>
             <dd>
-              Sørkedalsveien 6 (KPMG-bygget 18. etasje)
+              Oscars gate 30 (5. etasje)
               <br />
-              0369 Oslo
+              0256 Oslo
             </dd>
           </div>
           <div className="flex gap-x-4">
