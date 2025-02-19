@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
-
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
 import { NavLinks } from '@/components/NavLinks'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
@@ -48,12 +45,8 @@ function MobileNavLink({ children, ...props }) {
   )
 }
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
-
-export function Header(props) {
-  const { t, lang } = useTranslation('common')
+export function Header() {
+  const { t } = useTranslation('common')
   const kontakt = t('kontakt')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false) // State for mobile menu
 
@@ -62,7 +55,7 @@ export function Header(props) {
   }
 
   return (
-    <header className="absolute mx-auto w-full max-w-screen-2xl lg:relative lg:px-20">
+    <header className="absolute w-full mx-auto max-w-screen-2xl lg:relative lg:px-20">
       <nav>
         <div className="relative z-50 flex justify-between px-6 py-8 lg:px-0">
           <div className="relative z-10 flex items-center gap-16">
@@ -71,8 +64,8 @@ export function Header(props) {
               href="/"
               aria-label="Home"
             >
-              <Logo className="h-4 w-4 fill-white sm:h-5 sm:w-5 sm:fill-gray-900" />
-              <h3 className="font-serif text-xs font-bold uppercase text-white sm:text-base sm:text-gray-950">
+              <Logo className="w-4 h-4 fill-white sm:h-5 sm:w-5 sm:fill-gray-900" />
+              <h3 className="font-serif text-xs font-bold text-white uppercase sm:text-base sm:text-gray-950">
                 Forsvarsadvokat
               </h3>
             </Link>
@@ -90,9 +83,9 @@ export function Header(props) {
                   >
                     {({ open }) =>
                       open ? (
-                        <ChevronUpIcon className="h-6 w-6" />
+                        <ChevronUpIcon className="w-6 h-6" />
                       ) : (
-                        <MenuIcon className="h-6 w-6" />
+                        <MenuIcon className="w-6 h-6" />
                       )
                     }
                   </Popover.Button>
@@ -117,7 +110,7 @@ export function Header(props) {
                             y: -32,
                             transition: { duration: 0.2 },
                           }}
-                          className="absolute inset-x-0 top-0 z-0 origin-top rounded-b-2xl bg-gray-50 px-6 pb-6 pt-32 shadow-2xl shadow-gray-900/20"
+                          className="absolute inset-x-0 top-0 z-0 px-6 pt-32 pb-6 origin-top shadow-2xl rounded-b-2xl bg-gray-50 shadow-gray-900/20"
                         >
                           <div className="space-y-4">
                             <MobileNavLink href="#kontakt">
