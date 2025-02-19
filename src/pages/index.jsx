@@ -4,12 +4,11 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Fields } from '@/components/Fields'
-import { ReadMoreBox } from '@/components/ReadMoreBox'
 import { FeatureVideo } from '@/components/FeatureVideo'
 import useTranslation from 'next-translate/useTranslation'
 
 export default function Home() {
-  const { t, lang } = useTranslation('common')
+  const { t } = useTranslation('common')
   const metaDescription = t('meta-description')
 
   return (
