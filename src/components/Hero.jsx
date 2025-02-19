@@ -11,7 +11,7 @@ export function Hero() {
         {/* Desktop */}
         <div className="hidden sm:block">
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Forsvarsadvokat/Forsvarsadvokat_desktop_nfm3vs.webp"
+            src="/media/hero-desktop.webp"
             alt="Christian Flemmen Johansen"
             width={4500}
             height={2739}
@@ -24,7 +24,7 @@ export function Hero() {
         {/* Mobile */}
         <div className="sm:hidden">
           <Image
-            src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Forsvarsadvokat/mobile_hero_fw0ow7.webp"
+            src="/media/hero-mobile.webp"
             alt="Christian Flemmen Johansen"
             width={2000}
             height={1217}
