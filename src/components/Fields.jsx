@@ -94,7 +94,7 @@ export function Fields() {
                   <div className="flex items-start justify-end lg:order-first">
                     <div className="relative sm:hidden">
                       <Image
-                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Forsvarsadvokat/OsloTinghus_xjkr9h.webp"
+                        src="/media/OsloTinghus.webp"
                         alt="Advokat Christian Flemmen Johansen"
                         className="w-[24rem] max-w-none rounded-none ring-1 ring-gray-400/10"
                         width={1280}
@@ -104,7 +104,7 @@ export function Fields() {
                     </div>
                     <div className="relative hidden sm:block ">
                       <Image
-                        src="https://res.cloudinary.com/dt3k2apqd/image/upload/q_auto/Forsvarsadvokat/OsloTinghus_xjkr9h.webp"
+                        src="/media/OsloTinghus.webp"
                         alt="Advokat Christian Flemmen Johansen"
                         className="w-[57rem] max-w-none rounded-none ring-1 ring-gray-400/10"
                         width={1280}
