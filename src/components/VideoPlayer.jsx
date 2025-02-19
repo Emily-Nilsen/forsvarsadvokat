@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import { Video, CloudinaryContext } from 'cloudinary-react'
 
 export default function VideoPlayer({
   publicId,
@@ -11,22 +10,18 @@ export default function VideoPlayer({
   const videoRef = useRef()
 
   return (
-    <CloudinaryContext cloud_name="dt3k2apqd">
-      <div>
-        <Video
-          playsInline
-          muted
-          loop={loopBoolean}
-          autoPlay={autoplayBoolean}
-          publicId={publicId}
-          width="100%"
-          controls={controlsBoolean}
-          innerRef={videoRef}
-          fluid="true"
-          seekthumbnails="true"
-          poster={{ publicId: poster }}
-        />
-      </div>
-    </CloudinaryContext>
+    <div className="overflow-hidden rounded-2xl">
+      <video
+        ref={videoRef}
+        src={publicId}
+        poster={poster}
+        autoPlay={autoplayBoolean}
+        controls={controlsBoolean}
+        loop={loopBoolean}
+        playsInline
+        muted
+        className="w-full"
+      />
+    </div>
   )
 }
