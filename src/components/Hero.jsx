@@ -1,13 +1,13 @@
 import Image from 'next/image'
-import { motion, useInView, useMotionValue, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import useTranslation from 'next-translate/useTranslation'
 
 export function Hero() {
-  const { t, lang } = useTranslation('common')
+  const { t } = useTranslation('common')
   const advokat = t('advokat')
   return (
     <div className="bg-gray-900">
-      <div className="relative isolate overflow-hidden pt-14">
+      <div className="relative overflow-hidden isolate pt-14">
         {/* Desktop */}
         <div className="hidden sm:block">
           <Image
@@ -17,7 +17,7 @@ export function Hero() {
             height={2739}
             priority
             unoptimized
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
+            className="absolute inset-0 object-cover w-full h-full -z-10"
           />
           <div className="absolute inset-0 z-0 bg-gradient-to-r from-gray-900/50" />
         </div>
@@ -30,12 +30,12 @@ export function Hero() {
             height={1217}
             priority
             unoptimized
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
+            className="absolute inset-0 object-cover w-full h-full -z-10"
           />
           <div className="absolute inset-0 z-0 bg-gradient-to-r from-gray-900/70" />
         </div>
 
-        <div className="relative z-10 -mt-12 max-w-2xl px-6 py-32 sm:-mt-28 sm:px-16 sm:py-48 lg:py-56">
+        <div className="relative z-10 max-w-2xl px-6 py-32 -mt-12 sm:-mt-28 sm:px-16 sm:py-48 lg:py-56">
           <div className="text-left text-white">
             <motion.div
               whileInView={{ opacity: 1 }}
@@ -47,7 +47,7 @@ export function Hero() {
               }}
               className="mt-3 w-fit bg-white px-3.5 py-1.5 lg:mt-5"
             >
-              <h1 className="font-extrabold uppercase tracking-normal text-gray-950 sm:text-base md:text-lg">
+              <h1 className="font-extrabold tracking-normal uppercase text-gray-950 sm:text-base md:text-lg">
                 {advokat}
               </h1>
             </motion.div>
@@ -60,7 +60,7 @@ export function Hero() {
                 type: 'fade',
               }}
             >
-              <h1 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight sm:leading-normal md:text-4xl lg:mt-6 lg:text-5xl xl:text-6xl">
+              <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight font-display sm:leading-normal md:text-4xl lg:mt-6 lg:text-5xl xl:text-6xl">
                 Christian
               </h1>
             </motion.div>
@@ -74,7 +74,7 @@ export function Hero() {
               }}
               className="my-0 lg:my-3"
             >
-              <h1 className="font-display text-3xl font-extrabold leading-tight tracking-tight sm:leading-normal md:text-4xl lg:text-5xl xl:text-6xl">
+              <h1 className="text-3xl font-extrabold leading-tight tracking-tight font-display sm:leading-normal md:text-4xl lg:text-5xl xl:text-6xl">
                 Flemmen
               </h1>
             </motion.div>
@@ -88,7 +88,7 @@ export function Hero() {
               }}
               className="my-0 lg:my-3"
             >
-              <h1 className="font-display text-3xl font-extrabold leading-tight tracking-tight sm:leading-normal md:text-4xl lg:text-5xl xl:text-6xl">
+              <h1 className="text-3xl font-extrabold leading-tight tracking-tight font-display sm:leading-normal md:text-4xl lg:text-5xl xl:text-6xl">
                 Johansen
               </h1>
             </motion.div>
