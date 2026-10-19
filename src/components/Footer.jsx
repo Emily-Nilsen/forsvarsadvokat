@@ -1,5 +1,6 @@
 import { Container } from '@/components/Container'
 import { Logo } from '@/components/Logo'
+import { Wordmark } from '@/components/Wordmark'
 import { Contact } from '@/components/Contact'
 
 export function Footer() {
@@ -14,8 +15,8 @@ export function Footer() {
             <div className="flex items-center text-gray-900">
               <Logo className="flex-none w-5 h-5 fill-gray-900" />
               <div className="ml-2">
-                <p className="font-serif text-lg font-bold uppercase">
-                  Forsvarsadvokat
+                <p className="text-lg font-bold">
+                  <Wordmark />
                 </p>
               </div>
             </div>

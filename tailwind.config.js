@@ -37,9 +37,8 @@ module.exports = {
         gray: colors.neutral,
       }),
       fontFamily: {
-        sans: ['roboto', ...defaultTheme.fontFamily.sans],
-        display: ['roboto-condensed', ...defaultTheme.fontFamily.sans],
-        serif: ['athelas', ...defaultTheme.fontFamily.serif],
+        sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+        display: ['Roboto Condensed', ...defaultTheme.fontFamily.sans],
       },
       keyframes: {
         'fade-in': {

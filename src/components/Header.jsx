@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Popover } from '@headlessui/react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Logo } from '@/components/Logo'
+import { Wordmark } from '@/components/Wordmark'
 import { NavLinks } from '@/components/NavLinks'
 import { LanguageSwitcher } from '@/components/LanguageSwitcher'
 import useTranslation from 'next-translate/useTranslation'
@@ -65,8 +66,8 @@ export function Header() {
               aria-label="Home"
             >
               <Logo className="w-4 h-4 fill-white sm:h-5 sm:w-5 sm:fill-gray-900" />
-              <h3 className="font-serif text-xs font-bold text-white uppercase sm:text-base sm:text-gray-950">
-                Forsvarsadvokat
+              <h3 className="text-xs font-bold text-white sm:text-base sm:text-gray-950">
+                <Wordmark />
               </h3>
             </Link>
             <div className="hidden lg:flex lg:gap-10">
